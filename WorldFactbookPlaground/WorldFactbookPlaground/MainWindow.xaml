@@ -1,0 +1,41 @@
+﻿<Window x:Class="WorldFactbookPlaground.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WorldFactbookPlaground"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+	<Grid Margin="172,112,3.333,1.667">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="1*" />
+			<ColumnDefinition Width="1*" />
+
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+			<RowDefinition Height="1*" />
+		</Grid.RowDefinitions>
+
+		<TextBox Height="44" Name="Sig1"
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Row="0" Grid.ColumnSpan="2" Margin="309,0,0,0"/>
+		<TextBox Height="44" Name="Sig2"
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Right" Width="309"/>
+		<TextBox Height="44" Name="Sig3"
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" 
+				 Margin="0,0,-1,0" HorizontalAlignment="Right" Width="310"/>
+		<TextBox Height="44" Name="Sig4"
+				 TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Right" Width="309"/>
+		<ComboBox VerticalAlignment="Top" Height="44" 
+				  Grid.Row="0" Grid.Column="0" Margin="0,0,4.667,0">
+			<ComboBoxItem Name="population_growth_rate">population_growth_rate</ComboBoxItem>
+			<ComboBoxItem Name="population">population</ComboBoxItem>
+			<ComboBoxItem Name="net_migration_rate">net_migration_rate</ComboBoxItem>
+		</ComboBox>
+	</Grid>
+</Window>
